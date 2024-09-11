@@ -6,7 +6,7 @@ import uuid
 class Goods(models.Model):
     name = models.CharField(max_length=100)
     price = models.FloatField()
-    description = models.TextField(ax_length=200)
+    description = models.TextField(max_length=200)
     image = models.ImageField(upload_to="images/")  # MEDIA_ROOT/images/
 
 
