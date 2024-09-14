@@ -1,0 +1,19 @@
+<div>
+{% load static %}
+<img src="{% static 'images/home_page.jpg' %}" alt="Home page" width="1000px">
+</div>
+
+{% block content %}
+<h1>日本商品代購</h1>
+
+<p>Welcome to <em>Daikou</em></p>
+
+<p>The Shop has the following record counts:</p>
+<ul>
+<li><strong>Goods:</strong> {{ num_goods }}</li>
+<li><strong>Copies:</strong> {{ num_instances }}</li>
+</ul>
+
+<p>You have visited this page {{ num_visits }} time{{ num_visits|pluralize }}.</p>
+
+{% endblock %}
